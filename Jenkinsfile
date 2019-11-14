@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh 'npm --proxy http://192.168.201.201:3128 install' 
             }
         }
     }
